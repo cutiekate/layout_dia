@@ -1,0 +1,57 @@
+.header {
+  position: relative;
+  height: 800px;
+  justify-content: center;
+  background-color: #008aff;
+  border-radius: 0px  0px  0px 200px;
+  overflow: hidden;
+
+  &__container {
+    max-width: 1146px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+
+  }
+
+  &__logo {
+    width: 44.82px;
+    height: 25.63px;
+  }
+
+  &__hireus {
+    position: relative;
+    margin-left: 318px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    text-transform: uppercase;
+  }
+
+  &__hireus::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 28px;
+    background-color: #ff9c8e;
+    width: 67px;
+    height: 2px;
+    border-radius: 4px;
+  }
+}
+@media screen and(max-width: $tablet) {
+  .header {
+    height: 600px;
+    &__container {
+      margin: auto 100px;
+    }
+  }

@@ -1,0 +1,11 @@
+.button {
+  background: #ff9c8e;
+  border-radius: 64px;
+  width: 226px;
+  transition: 0.8s;
+
+  &:hover {
+    background: #fff;
+
+  }
+}

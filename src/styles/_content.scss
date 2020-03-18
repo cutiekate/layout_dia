@@ -1,0 +1,26 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .slider {
+    position: relative;
+    top: 7px;
+    left: 289px;
+    width: 687px;
+    height: 680px;
+    background-image: url("../images/slider/slider-1.svg");
+    background-position: center;
+    background-size: cover;
+
+  }
+}
