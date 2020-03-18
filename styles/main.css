@@ -8,7 +8,180 @@ h1 {
   font-weight: normal;
   font-style: normal; }
 
+.header {
+  position: relative;
+  height: 800px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #008aff;
+  border-radius: 0px  0px  0px 200px;
+  overflow: hidden; }
+  .header__container {
+    max-width: 1146px;
+    margin: 0 auto; }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 120px; }
+  .header__logo {
+    width: 44.82px;
+    height: 25.63px; }
+  .header__hireus {
+    position: relative;
+    margin-left: 318px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 5px;
+    text-transform: uppercase; }
+  .header__hireus::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 28px;
+    background-color: #ff9c8e;
+    width: 67px;
+    height: 2px;
+    border-radius: 4px; }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 600px; }
+    .header__container {
+      margin: auto 100px; } }
+
+.nav {
+  width: 760px;
+  margin: 0 20px; }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-transform: uppercase;
+    white-space: nowrap; }
+  .nav__item {
+    margin-left: 64px;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 5px; }
+  .nav__link {
+    -webkit-transition: color 0.8s;
+    transition: color 0.8s; }
+    .nav__link:hover {
+      color: #ff9c8e; }
+  .nav__item_hireus {
+    padding-left: 318px; }
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .content__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .content__slider {
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+  .content .slider {
+    position: relative;
+    top: 7px;
+    left: 289px;
+    width: 687px;
+    height: 680px;
+    background-image: url("../images/slider/slider-1.svg");
+    background-position: center;
+    background-size: cover; }
+
+.info {
+  max-width: 450px; }
+  .info__title {
+    margin-top: 120px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: -2px;
+    color: #fff; }
+  .info__text {
+    margin-top: 32px;
+    margin-bottom: 0;
+    width: 362px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff; }
+  .info__button {
+    margin-top: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 15px;
+    font-weight: 600;
+    width: 226px;
+    height: 50px;
+    border-radius: 64px;
+    border: none;
+    color: #fff; }
+
+.button {
+  background: #ff9c8e;
+  border-radius: 64px;
+  width: 226px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s; }
+  .button:hover {
+    background: #fff; }
+
+body,
+ul {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif; }
+
 body {
   background: #eee; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+
+a:hover {
+  color: #ff9c8e; }
+
+li {
+  list-style: none; }
 
 /*# sourceMappingURL=main.css.map */
