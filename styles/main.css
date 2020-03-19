@@ -15,7 +15,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #008aff;
-  border-radius: 0px  0px  0px 200px;
+  border-radius: 0  0  0 200px;
   overflow: hidden; }
   .header__container {
     max-width: 1146px;
@@ -54,12 +54,62 @@ h1 {
     width: 67px;
     height: 2px;
     border-radius: 4px; }
+  .header__toggle_icon {
+    display: none;
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    background-image: url(../images/menu-icon.svg);
+    cursor: pointer;
+    -webkit-transition: background-image 0.2s;
+    transition: background-image 0.2s; }
+  .header__toggle_button {
+    display: none; }
 
 @media screen and (max-width: 1024px) {
   .header {
     height: 600px; }
     .header__container {
-      margin: auto 100px; } }
+      margin: auto 100px; }
+    .header__hireus {
+      margin-left: 59px; } }
+
+@media (max-width: 750px) {
+  :checked ~ .nav {
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin: -24px -20px 0; }
+    :checked ~ .nav .nav__list {
+      position: absolute;
+      -webkit-animation: 0.8s anim-menu;
+              animation: 0.8s anim-menu; }
+  @-webkit-keyframes anim-menu {
+    from {
+      left: -200px; }
+    to {
+      left: 0; } }
+  @keyframes anim-menu {
+    from {
+      left: -200px; }
+    to {
+      left: 0; } }
+  :checked + .header__toggle_icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/menu-close-icon.svg); } }
+
+@media (max-width: 750px) {
+  .header__toggle_icon {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 45px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 1; }
+  .header__link {
+    display: none; } }
 
 .nav {
   width: 760px;
@@ -119,7 +169,13 @@ h1 {
     height: 680px;
     background-image: url("../images/slider/slider-1.svg");
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    border-radius: 200px 0 0; }
+
+@media screen and (max-width: 1024px) {
+  .content .slider {
+    left: 49px;
+    height: 478px; } }
 
 .info {
   max-width: 450px; }
@@ -134,7 +190,7 @@ h1 {
     margin-top: 32px;
     margin-bottom: 0;
     width: 362px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 18px;
     line-height: 150%;
     color: #fff; }
@@ -154,6 +210,10 @@ h1 {
     border: none;
     color: #fff; }
 
+@media screen and (max-width: 1024px) {
+  .info__title {
+    margin-top: 50px; } }
+
 .button {
   background: #ff9c8e;
   border-radius: 64px;
@@ -162,6 +222,89 @@ h1 {
   transition: 0.8s; }
   .button:hover {
     background: #fff; }
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .about__container {
+    padding-top: 148px;
+    padding-bottom: 148px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 754px; }
+  .about__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: #253757; }
+  .about__text {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #6c788b; }
+
+.expertise {
+  background-color: #fff; }
+  .expertise__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    text-align: center;
+    color: #253757;
+    padding-top: 128px;
+    margin-bottom: 64px; }
+  .expertise__products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    padding-bottom: 134px; }
+  .expertise__product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 264px; }
+  .expertise .product__img {
+    height: 166px;
+    width: 166px;
+    border-radius: 25px;
+    margin: 0 auto; }
+  .expertise .product__name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    font-family: "Poppins", sans-serif;
+    color: #253757;
+    margin-top: 40px;
+    margin-bottom: 0; }
+  .expertise .product__text {
+    margin-top: 16px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 150%; }
 
 body,
 ul {
