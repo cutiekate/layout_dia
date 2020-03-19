@@ -1,9 +1,11 @@
+@import "vars";
+
 .header {
   position: relative;
   height: 800px;
   justify-content: center;
   background-color: #008aff;
-  border-radius: 0px  0px  0px 200px;
+  border-radius: 0  0  0 200px;
   overflow: hidden;
 
   &__container {
@@ -47,6 +49,20 @@
     height: 2px;
     border-radius: 4px;
   }
+
+  &__toggle_icon {
+    display: none;
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    background-image: url(../images/menu-icon.svg);
+    cursor: pointer;
+    transition: background-image 0.2s;
+  }
+
+  &__toggle_button {
+    display: none;
+  }
 }
 @media screen and(max-width: $tablet) {
   .header {
@@ -54,4 +70,51 @@
     &__container {
       margin: auto 100px;
     }
+    &__hireus {
+      margin-left: 59px;
+    }
   }
+}
+@media (max-width: 750px) {
+  &:checked ~ .nav {
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin: -24px -20px 0;
+
+    & .nav__list {
+      position: absolute;
+      animation: 0.8s anim-menu;
+
+      @keyframes anim-menu {
+        from {
+          left: -200px;
+        }
+        to {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  &:checked + .header__toggle_icon {
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/menu-close-icon.svg);
+  }
+}
+
+@media (max-width: 750px) {
+  .header__toggle_icon {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 45px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  .header__link {
+    display: none;
+  }
+}

@@ -1,0 +1,53 @@
+.expertise{
+  background-color: #fff;
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 150%;
+    text-align: center;
+    color: #253757;
+    padding-top: 128px;
+    margin-bottom: 64px;
+  }
+
+  &__products {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 134px;
+
+  }
+
+  &__product {
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+  }
+
+  .product__img {
+    height: 166px;
+    width: 166px;
+    border-radius: 25px;
+    margin: 0 auto;
+
+  }
+  .product__name {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    font-family: "Poppins";
+    color: #253757;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .product__text {
+    margin-top: 16px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+

@@ -1,3 +1,5 @@
+@import "vars";
+
 .content {
   display: flex;
   justify-content: space-between;
@@ -21,6 +23,13 @@
     background-image: url("../images/slider/slider-1.svg");
     background-position: center;
     background-size: cover;
+    border-radius: 200px 0 0;
 
+  }
+}
+@media screen and (max-width: $tablet) {
+  .content .slider {
+    left: 49px;
+    height: 478px;
   }
 }
