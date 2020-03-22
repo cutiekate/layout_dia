@@ -1,31 +1,43 @@
-.about {
+.vpr {
+  background: #fff;
+  min-width: 1600px;
+  height: 888px;
   display: flex;
   justify-content: center;
 
-  &__container {
-    padding-top: 148px;
-    padding-bottom: 148px;
+  &__content {
+    width: 715px;
     display: flex;
     flex-direction: column;
-    max-width: 754px;
   }
 
   &__title {
-    margin-top: 0;
-    margin-bottom: 10px;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 52px;
     line-height: 150%;
     color: #253757;
+    text-align: center;
+    margin-top: 199px;
+    margin-bottom: 24px;
   }
 
   &__text {
-    margin: 0;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
+    text-align: center;
     color: #6c788b;
+    margin-top: 0;
+    margin-bottom: 79px;
+  }
+
+  &__button {
+    width: 226px;
+    height: 56px;
+    margin: 0 auto;
+    color: #fff;
   }
 }
+

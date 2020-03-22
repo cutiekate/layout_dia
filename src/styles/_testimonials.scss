@@ -1,0 +1,133 @@
+.testimonials {
+  margin: 1124px auto 0;
+  max-width: 1600px;
+
+
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c0cdd7;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+  }
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 150%;
+    color: #253757;
+    margin-bottom: 0;
+
+  }
+  &__people {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    margin-bottom: 168px;
+
+  }
+
+  .people {
+    &__card {
+      display: flex;
+      flex-direction: column;
+      width: 314px;
+      height: 494px;
+      background: #fff;
+      box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
+      border-radius: 24px;
+
+    }
+
+    &__photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      padding: 87px;
+      position: relative;
+    }
+
+    &__story {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+      text-align: center;
+      color: #6c788b;
+      margin-left: 32px;
+      margin-right: 32px;
+    }
+    &__name {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 150%;
+      text-align: center;
+      color: #253757;
+    }
+    &__position {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 19px;
+      text-align: center;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #c0cdd7;
+    }
+
+    &__img {
+      position: relative;
+    }
+
+    &__figure {
+      position: absolute;
+      width: 139px;
+      height: 56px;
+      border-radius: 500px;
+      transform: rotate(-60deg);
+    }
+
+    .figure_first {
+      top: 85px;
+      left: 45px;
+    }
+
+    .figure_second {
+      top: 166px;
+      right: 45px;
+    }
+
+  .figure--blue {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2;
+  }
+  .figure--yellow {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+  }
+
+  .figure--red {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
+  }
+  }
+  .quotes_img {
+    position: absolute;
+    width: 20.58px;
+    height: 18.48px;
+    top: 300px;
+    left: 147px;
+  }
+}
