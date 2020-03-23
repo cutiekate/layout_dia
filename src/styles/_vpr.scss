@@ -1,9 +1,24 @@
 .vpr {
   background: #fff;
   min-width: 1600px;
-  height: 888px;
+  height: 691px;
   display: flex;
   justify-content: center;
+
+  &__bg{
+    display: flex;
+    justify-content: center;
+    width: 1450px;
+    height: 546px;
+    background-image: url(../images/vpr/Shapes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 72px;
+    margin-left: 82px;
+    margin-right: 67px;
+
+
+  }
 
   &__content {
     width: 715px;
@@ -18,7 +33,7 @@
     line-height: 150%;
     color: #253757;
     text-align: center;
-    margin-top: 199px;
+    margin-top: 127px;
     margin-bottom: 24px;
   }
 
@@ -40,4 +55,3 @@
     color: #fff;
   }
 }
-

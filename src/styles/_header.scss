@@ -75,6 +75,18 @@
     }
   }
 }
+
+@media (max-width: 750px) {
+  .header__toggle_icon {
+    display: block;
+    position: absolute;
+    right: 70px;
+    top: 62px;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
+
 @media (max-width: 750px) {
   &:checked ~ .nav {
     display: block;
@@ -82,16 +94,16 @@
     bottom: 0;
     margin: -24px -20px 0;
 
-    & .nav__list {
+    & .nav__link {
       position: absolute;
-      animation: 0.8s anim-menu;
+      animation: 0.4s anim-menu;
 
       @keyframes anim-menu {
         from {
-          left: -200px;
+          top: -200px;
         }
         to {
-          left: 0;
+          top: 0;
         }
       }
     }
@@ -101,20 +113,5 @@
     width: 16px;
     height: 16px;
     background-image: url(../images/menu-close-icon.svg);
-  }
-}
-
-@media (max-width: 750px) {
-  .header__toggle_icon {
-    display: block;
-    position: absolute;
-    right: 50px;
-    top: 45px;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-
-  .header__link {
-    display: none;
   }
 }

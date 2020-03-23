@@ -15,7 +15,7 @@
           <div class="header__logo"><a href="#"><img src="./images/logo/logo.svg" alt="logo"></a></div>
           <input type="checkbox" class="header__toggle_button" name="menu" id="menu">
           <label class="header__toggle_icon" for="menu"></label>
-          <nav classs="nav header__nav">
+          <nav class="nav header__nav">
             <ul class="nav__list">
               <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
               <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
@@ -30,10 +30,23 @@
           <div class="content__info info">
             <h1 class="info__title">Strategic<br>Agency</h1>
             <p class="info__text">We believe in the power of bold ideas that can solve business challenges.</p>
-            <button class="info__button button"><a class="button__link" gihref="#">Learn more</a></button>
+            <button class="info__button button">Learn more</button>
           </div>
           <div class="content__slider slider">
-
+            <div class="arrow slider__arrow">
+              <div class="arrow__wrap">
+                <button class="round-arrow arrow__round-arrow arrow__round-arrow--left"></button>
+              </div>
+              <div class="arrow__wrap">
+                <button class="round-arrow arrow__round-arrow arrow__round-arrow--right"></button>
+              </div>
+            </div>
+            <div class="intro slider__intro">
+              <h6 class="intro__title">intro</h6>
+              <p class="intro__text">
+                By the same illusion which lifts the horizon.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -168,7 +181,7 @@
                 <div class="people__figure figure_first figure--blue"></div>
                 <div class="people__figure figure_second figure--blue"></div>
                 <div class="people__quotes quotes--blue">
-                  <img class="quotes_img" src="./images/quotes/blue.svg">
+                  <img class="quotes_img" src="./images/quotes/blue.svg" alt="quotes">
                 </div>
               </div>
               <img class="people__photo" src="images/people/people-1.png" alt="people photo">
@@ -181,7 +194,7 @@
                 <div class="people__figure figure_first figure--yellow"></div>
                 <div class="people__figure figure_second figure--yellow"></div>
                 <div class="people__quotes quotes--yellow">
-                  <img class="quotes_img" src="./images/quotes/yellow.svg">
+                  <img class="quotes_img" src="./images/quotes/yellow.svg" alt="quotes">
                 </div>
               </div>
               <img class="people__photo" src="images/people/people-2.png" alt="people photo">
@@ -194,7 +207,7 @@
                 <div class="people__figure figure_first figure--red"></div>
                 <div class="people__figure figure_second figure--red"></div>
                 <div class="people__quotes quotes--red">
-                  <img class="quotes_img" src="./images/quotes/red.svg">
+                  <img class="quotes_img" src="./images/quotes/red.svg" alt="quotes">
                 </div>
               </div>
               <img class="people__photo" src="images/people/people-3.png" alt="people photo">
@@ -206,14 +219,61 @@
         </div>
       </section>
       <section class="vpr">
-        <div class="vpr__content">
-          <h3 class="vpr__title">Vision, Passion, Results</h3>
-          <p class="vpr__text">We are sure that first-rate job is possible only if all three components are united.</p>
-          <button class="vpr__button button">Apply</button>
+        <div class="vpr__bg">
+          <div class="vpr__content">
+            <h3 class="vpr__title">Vision, Passion, Results</h3>
+            <p class="vpr__text">We are sure that first-rate job is possible only if all three components are united.</p>
+            <button class="vpr__button button">Apply</button>
+          </div>
         </div>
-
       </section>
     </main>
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container">
+          <div class="footer__content content">
+            <div class="content__message">
+              <h3 class="content__message_title">Send us a message</h3>
+              <form class="content__form form">
+                <input type="text" name="email" class="input form__email" placeholder="email@example.com">
+                <input type="text" name="name" class="input form__name" placeholder="Your name">
+                <input type="text" name="message" class="input form__message" placeholder="Your message">
+                <button class="form__button button">Send</button>
+              </form>
+            </div>
+            <div class="content__contact contact">
+              <h3 class="contact__title">Contact us</h3>
+              <div class="contact__phone">
+                <h6 class="contact__phone_title">Call us</h6>
+                <a class="contact__phone_number" href="tel:654 321 987">654 321 987</a>
+              </div>
+              <div class="contact__visit">
+                <h6 class="contact__visit_title">Visit us</h6>
+                <a class="contact__visit_adress">2905 West Drive, Buffalo Grove</a>
+              </div>
+              <div class="contact__socials">
+                <h6 class="contact__socials_title">our socials</h6>
+              </div>
+            </div>
+          </div>
+            <div class="footer__bottom bottom">
+              <a href="#"><div class="footer__logo logo">
+                <img src="./images/logo/logo.svg" alt="logo">
+              </div></a>
+              <nav classs="nav footer__nav">
+                <ul class="nav__list">
+                  <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Services</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Work</a></li>
+                  <li class="nav__item"><a class="nav__link" href="#">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

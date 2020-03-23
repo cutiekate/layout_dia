@@ -2,10 +2,21 @@
   background: #ff9c8e;
   border-radius: 64px;
   width: 226px;
+  font-size: 15px;
+  font-weight: 600;
+  height: 50px;
   transition: 0.8s;
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+
 
   &:hover {
+    color: #ff9c8e;
     background: #fff;
+    border: 1px solid #ff9c8e;
+
+
 
   }
 }
