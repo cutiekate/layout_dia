@@ -58,6 +58,12 @@
       justify-content: space-around;
     }
   }
+
+  @media screen and (max-width: 320px) {
+    &__people {
+      margin-bottom: 10px;
+    }
+  }
   .people {
     &__card {
       display: flex;

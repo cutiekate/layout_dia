@@ -25,6 +25,12 @@
     flex-direction: column;
   }
 
+  @media screen and (max-width: 320px) {
+    &__content {
+      width: 296px;
+    }
+  }
+
   &__title {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -40,9 +46,13 @@
     &__title {
       font-size: 35px;
       margin-top: 15px;
-
     }
-
+  }
+  @media screen and (max-width: 320px) {
+    &__title {
+      font-size: 25px;
+      margin-top: -50px;
+    }
   }
 
   &__text {
@@ -54,6 +64,13 @@
     color: #6c788b;
     margin-top: 0;
     margin-bottom: 79px;
+  }
+
+  @media screen and (max-width:320px) {
+    &__text {
+      font-size: 17px;
+      margin-bottom: 33px;
+    }
   }
 
   &__button {
@@ -69,4 +86,11 @@
     margin-bottom: -225px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .vpr {
+    height: 540px;
+  }
+}
+
 

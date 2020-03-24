@@ -50,3 +50,9 @@
     line-height: 12px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .nav__list {
+    margin-left: -90px;
+  }
+}

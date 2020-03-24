@@ -8,6 +8,13 @@
     border-radius: 0 200px 0 0 ;
   }
 
+  @media screen and (max-width:320px) {
+    &__bg {
+      border-radius: 0;
+    }
+
+  }
+
   &__container {
     padding-top: 180px;
     padding-left: 227px;
@@ -24,12 +31,24 @@
       padding-top: 50px;
       padding-left: 153px;
     }
-
+  }
+  @media screen and (max-width: 320px) {
+    &__container {
+      padding-left: 66px;
+      padding-right: 3px;
+    }
   }
 
   &__content {
     display: flex;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 320px) {
+    &__content {
+      flex-direction: column;
+      margin-left: -25px;
+    }
   }
 
   &__bottom_container {
@@ -72,6 +91,15 @@
         font-size: 17px;
         margin-bottom: 25px;
       }
+    }
+
+    @media screen and (max-width: 320px){
+     &__message_title {
+      font-size: 11px;
+      margin-bottom: 10px;
+      margin-top: -20px;
+     }
+
     }
 
     &__form {
@@ -119,6 +147,15 @@
       }
 
     }
+
+    @media screen and (max-width:320px) {
+      .input {
+        width: 234px;
+        font-size: 12px;
+        line-height: 11px;
+        margin-bottom: 20px;
+      }
+    }
     .form {
 
       &__button {
@@ -131,7 +168,11 @@
         }
       }
 
-
+      @media screen and (max-width: 320px) {
+        &__button {
+          margin: 18px 0;
+        }
+      }
     }
 
     .contact {
@@ -218,6 +259,23 @@
           font-size: 15px;
         }
 
+      }
+
+      @media screen and (max-width:320px) {
+        &__title {
+          font-size: 13px;
+          margin-bottom: 0px;
+        }
+        &__phone_title,
+        &__visit_title {
+          margin-top: 0;
+          font-size: 9px;
+        }
+
+        &__phone_number,
+        &__visit_adress {
+          font-size: 10px;
+        }
       }
     }
   }

@@ -35,5 +35,23 @@
     line-height: 150%;
     color: #6c788b;
   }
+
+  @media screen and (max-width: 320px){
+    
+    &__container {
+      padding-bottom: 12px;
+    }
+
+    &__title {
+      margin-top: -48px;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 17px;
+    }
+  }
+
 }
 

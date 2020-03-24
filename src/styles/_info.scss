@@ -19,6 +19,16 @@
     line-height: 150%;
     color: #fff;
   }
+
+  @media screen and (max-width: 320px) {
+    &__text {
+      margin-top: 5px;
+      font-size: 13px;
+      width: 281px;
+    }
+  }
+
+
   &__button {
     margin-top: 56px;
     color: #fff;
@@ -41,8 +51,11 @@
 }
 @media screen and (max-width: 320px) {
   .info__title {
-    font-size: 35px;
-    margin-left: 59px;
-}
+    font-size: 31px;
+    margin-left: 35px;
   }
+  .info__button {
+    margin-left: 28px;
+  }
+}
 

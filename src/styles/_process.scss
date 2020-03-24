@@ -25,6 +25,12 @@
     }
   }
 
+  @media screen and (max-width: 320px) {
+    &__info {
+      width: 243px;
+    }
+  }
+
   &__info_heading {
     font-weight: bold;
     font-size: 13px;
@@ -43,6 +49,13 @@
     }
   }
 
+  @media screen and (max-width: 320px) {
+    &__info_heading {
+      margin-top: 45px;
+    }
+  }
+
+
   &__info_title {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
@@ -52,6 +65,13 @@
     margin-top: 16px;
     margin-bottom: 0;
   }
+
+  @media screen and (max-width: 320px) {
+    &__info_title {
+      font-size: 25px;
+    }
+  }
+
   &__info_text {
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
@@ -82,13 +102,18 @@
       }
     }
 
-
-
     &__right {
       height: 558px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+
+    @media screen and (max-width:320px) {
+      &__left,
+      &__right {
+        height: 292px;
+      }
     }
 
     .card {
@@ -142,6 +167,15 @@
         margin-bottom: 32px;
       }
 
+      @media screen and (max-width:320px) {
+        &__text {
+          font-size: 7px;
+          margin-top: 9px;
+          margin-bottom: 8px;
+          text-align: center;
+        }
+      }
+
       &__links {
         display: flex;
       }
@@ -151,7 +185,13 @@
         width: 40px;
         height: 40px;
         border-radius: 50%;
+      }
 
+      @media screen  and (max-width:320px) {
+        &__icon {
+          width: 25px;
+          height: 25px;
+        }
       }
 
       &__icon_img {
@@ -188,6 +228,21 @@
         font-family: "Poppins", sans-serif;
         color: #334563;
       }
+
+      @media screen and (max-width:320px) {
+        &__link {
+          margin-top: 2px;
+          font-size: 8px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 320px) {
+      .card {
+        width: 132px;
+        height: 132px;
+        padding: 12px;
+      }
     }
   }
 
@@ -196,6 +251,12 @@
       margin-top: 10px;
       margin-left: 0;
     }
+  }
+  @media screen and (max-width: 320px) {
+    .cards {
+      width: 295px;
+    }
+
   }
 
 }

@@ -28,7 +28,7 @@
 
   @media screen and (max-width: 320px) {
     &__logo {
-      margin-left: -15px;
+      margin-left: -55px;
     }
 
   }
@@ -95,6 +95,13 @@
 
   .header__hireus {
     display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__toggle_icon {
+    right: 55px;
+    top: 61px;
   }
 }
 
