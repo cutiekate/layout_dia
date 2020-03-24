@@ -222,8 +222,6 @@
     }
   }
 }
-
-
 .nav__item {
   text-transform: uppercase;
   font-weight: bold;
@@ -237,4 +235,8 @@
     color: #ff9c8e;
   }
 }
-
+@media screen and (max-width: 1024px){
+  .footer__nav {
+    display: none;
+  }
+}
