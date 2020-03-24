@@ -638,6 +638,10 @@ h1 {
     .approach__bg {
       width: 750px;
       margin-left: 75px; } }
+  @media screen and (max-width: 1024px) {
+    .approach__bg {
+      width: 1024px;
+      margin-left: 100px; } }
   .approach__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -720,6 +724,8 @@ h1 {
       margin-top: 285px;
       margin-left: 196px; } }
   @media screen and (max-width: 1024px) {
+    .approach__img {
+      display: none; }
     .approach__content {
       margin-left: 375px; } }
 
@@ -1135,6 +1141,10 @@ h1 {
     transition: color 0.3s; }
   .nav__item .nav__link:hover {
     color: #ff9c8e; }
+
+@media screen and (max-width: 1024px) {
+  .footer__nav {
+    display: none; } }
 
 body,
 ul {
