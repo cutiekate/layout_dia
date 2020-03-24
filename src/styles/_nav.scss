@@ -35,8 +35,9 @@
 @media (max-width: 750px) {
   .nav__list {
     flex-direction: column;
-    height: 200px;
+    height: 150px;
     width: 300px;
+    margin-left: 75px;
   }
 
   .nav {
@@ -45,9 +46,7 @@
 
   .nav__link {
     font-weight: bold;
-    font-size: 22px;
-    line-height: 22px;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    font-size: 12px;
+    line-height: 12px;
   }
 }

@@ -10,6 +10,13 @@
     max-width: 754px;
   }
 
+  @media screen and (max-width: 750px) {
+    &__container {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 10px;
@@ -29,3 +36,4 @@
     color: #6c788b;
   }
 }
+

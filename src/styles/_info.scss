@@ -30,3 +30,19 @@
     margin-top: 50px;
   }
 }
+@media screen and (max-width: 750px) {
+  .info__title {
+    font-size: 50px;
+    margin-top: 95px;
+  }
+  .info__button {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .info__title {
+    font-size: 35px;
+    margin-left: 59px;
+}
+  }
+

@@ -1,6 +1,5 @@
 .vpr {
   background: #fff;
-  min-width: 1600px;
   height: 691px;
   display: flex;
   justify-content: center;
@@ -37,6 +36,15 @@
     margin-bottom: 24px;
   }
 
+  @media screen and (max-width: 750px) {
+    &__title {
+      font-size: 35px;
+      margin-top: 15px;
+
+    }
+
+  }
+
   &__text {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
@@ -55,3 +63,10 @@
     color: #fff;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .vpr {
+    margin-bottom: -225px;
+  }
+}
+

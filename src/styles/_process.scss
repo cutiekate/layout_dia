@@ -1,17 +1,30 @@
 .process {
   display: flex;
   justify-content: center;
-
   height: 750px;
 
   &__container {
     display: flex;
+  }
+  @media screen and (max-width: 750px){
+    &__container {
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
   &__info {
     display: flex;
     flex-direction: column;
     width: 362px;
   }
+
+  @media screen and (max-width: 1024px) {
+    &__info {
+      width: 125px;
+    }
+  }
+
   &__info_heading {
     font-weight: bold;
     font-size: 13px;
@@ -22,6 +35,12 @@
     color: #c0cdd7;
     margin-top: 250px;
     margin-bottom: 0;
+  }
+
+  @media screen and(max-width: 750px) {
+    &__info_heading {
+      margin-top: 85px;
+    }
   }
 
   &__info_title {
@@ -56,6 +75,14 @@
       margin-top: 132px;
 
     }
+
+    @media screen and (max-width: 750px){
+      &__left {
+        margin-top: 0;
+      }
+    }
+
+
 
     &__right {
       height: 558px;
@@ -163,4 +190,12 @@
       }
     }
   }
+
+  @media screen and (max-width: 750px) {
+    .cards {
+      margin-top: 75px;
+      margin-left: 0;
+    }
+  }
+
 }

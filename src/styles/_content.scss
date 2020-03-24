@@ -101,3 +101,12 @@
     height: 478px;
   }
 }
+@media screen and (max-width: 750px) {
+
+  .content {
+    justify-content: center;
+  }
+  .content .slider {
+    display: none;
+  }
+}

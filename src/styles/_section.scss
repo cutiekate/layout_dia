@@ -1,5 +1,17 @@
 .section {
   padding-left: 227px;
   padding-right: 227px;
+}
 
+@media screen and (max-width: 750px) {
+  .section {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }

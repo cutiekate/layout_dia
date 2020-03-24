@@ -16,6 +16,17 @@
     flex-direction: column;
   }
 
+  @media screen and(max-width: 750px){
+    &__bg {
+      height: 450px;
+    }
+    &__container {
+      padding-top: 50px;
+      padding-left: 153px;
+    }
+
+  }
+
   &__content {
     display: flex;
     justify-content: center;
@@ -33,6 +44,13 @@
     width: 990px;
     margin: 70px auto;
   }
+
+  @media screen and(max-width: 750px){
+    &__bottom {
+      width: 0;
+      margin: 18px auto;
+    }
+  }
   .content {
     &__message {
       display: flex;
@@ -47,6 +65,13 @@
       color: #fff;
       margin-top: 0;
       margin-bottom: 56px;
+    }
+
+    @media screen and(max-width: 750px){
+      &__message_title {
+        font-size: 17px;
+        margin-bottom: 25px;
+      }
     }
 
     &__form {
@@ -78,6 +103,21 @@
         border-bottom: 2px #fff solid;
         opacity: 1;
       }
+    }
+
+    @media screen and (max-width: 750px) {
+      .input {
+        width: 220px;
+        font-size: 13px;
+        line-height: 13px;
+        padding: 0;
+        margin-bottom: 25px;
+      }
+
+      &__form {
+        margin-right: 150px;
+      }
+
     }
     .form {
 
@@ -161,15 +201,23 @@
 
       }
 
-      .socials_icons {
-        position: relative;
-
-
-        .socials_icon {
-          position: absolute;
-          width: 14px;
-          height: 24px;
+      @media screen and(max-width: 750px) {
+        &__title {
+          font-size: 17px;
+          margin-bottom: 25px;
+          white-space: nowrap;
         }
+
+        &__phone_title,
+        &__visit_title {
+          padding-top: 0;
+          font-size: 9px;
+        }
+        &__phone_number,
+        &__visit_adress {
+          font-size: 15px;
+        }
+
       }
     }
   }

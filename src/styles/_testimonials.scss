@@ -28,16 +28,36 @@
     line-height: 150%;
     color: #253757;
     margin-bottom: 0;
-
   }
   &__people {
     display: flex;
     justify-content: space-between;
     margin-top: 85px;
     margin-bottom: 168px;
-
   }
 
+  @media screen and (max-width: 750px){
+
+    &__container {
+      align-items: center;
+    }
+    &__people {
+      flex-direction: column;
+      margin-bottom: 75px;
+    }
+
+    &__heading {
+      margin-top: -75px;
+      margin-left: -250px;
+    }
+  }
+
+  @media screen and(max-width: 1024px){
+    &__people {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
   .people {
     &__card {
       display: flex;
@@ -47,8 +67,20 @@
       background: #fff;
       box-shadow: 0 9px 18px rgba(37, 41, 49, 0.03);
       border-radius: 24px;
+    }
+
+    @media screen and (max-width: 750px){
+      &__card {
+        margin-bottom: 40px;
+      }
 
     }
+    @media screen and (max-width: 1024px) {
+      .people__card_third {
+        margin-top: 50px;
+      }
+    }
+
 
     &__photo {
       width: 140px;
