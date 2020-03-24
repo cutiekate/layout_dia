@@ -8,6 +8,7 @@
 
   }
 
+
   &__bg {
     width: 1479px;
     height: 976px;
@@ -28,6 +29,10 @@
     &__bg {
       width: 1024px;
       margin-left: 100px;
+    }
+
+    &__container {
+      margin-top: 175px;
     }
   }
   &__content {
