@@ -613,7 +613,7 @@ h1 {
         color: #334563; }
   @media screen and (max-width: 750px) {
     .process .cards {
-      margin-top: 75px;
+      margin-top: 10px;
       margin-left: 0; } }
 
 .approach {
@@ -641,7 +641,9 @@ h1 {
   @media screen and (max-width: 1024px) {
     .approach__bg {
       width: 1024px;
-      margin-left: 100px; } }
+      margin-left: 100px; }
+    .approach__container {
+      margin-top: 175px; } }
   .approach__content {
     display: -webkit-box;
     display: -ms-flexbox;
